@@ -1,3 +1,10 @@
+# meus arquivos removidos
+.DS_Store
+*/*/.DS_Store
+
+# arquivos escondidos
+.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,2 +1,2 @@
-# AprendaProgramar1Semana
-Códigos do curso de introdução a programação da Conquer X.
+# Introducao-a-Programacao
+Códigos usados no curso de Introdução à Programação da Conquer X

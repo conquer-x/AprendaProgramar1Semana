@@ -1,0 +1,136 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ConquerX",
+		"_postman_id": "d0114aa4-c4e7-277f-c481-b100d6e75e73",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "exemploAPI",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "lista de notas",
+			"request": {
+				"url": "localhost:5000/notes",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "notas1",
+			"request": {
+				"url": "localhost:5000/notes/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CriarNota",
+			"request": {
+				"url": "localhost:5000/notes/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"build the codez\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeletaNotas1",
+			"request": {
+				"url": "localhost:5000/notes/1/",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Protected",
+			"request": {
+				"url": "http://localhost:5000/protected",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PegarToken",
+			"request": {
+				"url": "http://localhost:5000/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dGVzdDp0ZXN0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"test\",\n\"password\":\"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ChamadaProtectedToken",
+			"request": {
+				"url": "http://localhost:5000/protected",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjODgxMTdlNS1kNzBkLTQ0NDctOWZiYS0xMWZmNTcyNDA1Y2IiLCJleHAiOjE1NTQxNDA5MzAsImZyZXNoIjpmYWxzZSwiaWF0IjoxNTU0MTQwMDMwLCJ0eXBlIjoiYWNjZXNzIiwibmJmIjoxNTU0MTQwMDMwLCJpZGVudGl0eSI6InRlc3QifQ.dm-N97hbWEv4AbVYKQpEnAdj86OdWByozC87NULeFSk",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"test\",\n\"password\":\"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
